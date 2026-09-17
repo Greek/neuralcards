@@ -12,7 +12,7 @@ export default async function Home() {
 
   return (
     <HydrateClient>
-      <h1>hey it's me, it's {session.user.name}!</h1>
+      <h1>hey it&apos;s me, it&apos;s {session.user.name}!</h1>
     </HydrateClient>
   );
 }
