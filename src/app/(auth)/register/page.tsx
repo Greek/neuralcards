@@ -1,5 +1,8 @@
 'use client';
 
+import { Check, X } from 'lucide-react';
+import Link from 'next/link';
+import { type ChangeEvent, type FormEvent, useState } from 'react';
 import { Button } from '~/components/ui/button';
 import {
   Card,
@@ -11,12 +14,9 @@ import {
 } from '~/components/ui/card';
 import { Input } from '~/components/ui/input';
 import { Label } from '~/components/ui/label';
-import { authClient, translateAuthErrorCode } from '~/server/better-auth/client';
 import { APP_NAME, MAX_PASSWORD_LENGTH } from '~/lib/constants';
 import { validatePassword } from '~/lib/passwords';
-import { Check, X } from 'lucide-react';
-import Link from 'next/link';
-import { type ChangeEvent, type FormEvent, useState } from 'react';
+import { authClient, translateAuthErrorCode } from '~/server/better-auth/client';
 
 export default function SignupForm() {
   const [form, setForm] = useState({

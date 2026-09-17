@@ -1,11 +1,11 @@
 import "~/styles/globals.css";
 
 import { type Metadata } from "next";
-import { Geist, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 
-import { TRPCReactProvider } from "~/trpc/react";
-import { cn } from "~/lib/utils";
 import { APP_NAME } from "~/lib/constants";
+import { cn } from "~/lib/utils";
+import { TRPCReactProvider } from "~/trpc/react";
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 

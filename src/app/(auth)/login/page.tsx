@@ -1,5 +1,9 @@
 'use client';
 
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import type { ChangeEvent } from 'react';
+import { useState, type FormEvent } from 'react';
 import { Button } from '~/components/ui/button';
 import {
   Card,
@@ -11,12 +15,8 @@ import {
 } from '~/components/ui/card';
 import { Input } from '~/components/ui/input';
 import { Label } from '~/components/ui/label';
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import { useState, type FormEvent } from 'react';
-import { authClient, translateAuthErrorCode } from '~/server/better-auth/client';
-import type { ChangeEvent } from 'react'
 import { APP_NAME } from '~/lib/constants';
+import { authClient, translateAuthErrorCode } from '~/server/better-auth/client';
 
 export default function LoginPage() {
   const router = useRouter();

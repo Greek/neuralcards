@@ -2,3 +2,5 @@ allowBuilds:
   esbuild: true
   unrs-resolver: true
   workerd: true
+minimumReleaseAgeExclude:
+  - prettier@3.9.8
